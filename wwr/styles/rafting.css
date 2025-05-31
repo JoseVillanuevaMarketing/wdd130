@@ -21,39 +21,60 @@ body {
   background-color: #fff;
 }
 
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
-}
-
+/* Layout for header */
 header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
   background-color: var(--primary-color);
   color: var(--accent2-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 10px;
+  gap: 20px;
+}
+
+header h1 {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
   font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main, footer {
+  width: 840px;
+  margin: 0 auto;
 }
 
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
+  margin-bottom: 8px;
 }
 
-nav, p, section, article {
-  margin: 16px;
+p, section, article {
+  margin: 16px 0;
   padding: 8px;
 }
 
 .hero {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .hero img {
@@ -62,21 +83,22 @@ nav, p, section, article {
   height: auto;
 }
 
-.hero h1 {
+.hero h2 {
   position: absolute;
   top: 20px;
-  width: 100%;
-  padding: 16px;
+  left: 0;
+  right: 0;
   text-align: center;
-  opacity: 0.7;
   background-color: var(--accent1-color);
   color: #fff;
+  opacity: 0.8;
+  padding: 10px;
 }
 
 .hero article {
   position: absolute;
   bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 10px;
   max-width: 80%;
 }
@@ -88,14 +110,53 @@ nav, p, section, article {
   border-radius: 8px;
 }
 
+/* Adventure gallery */
+.adventures {
+  margin-top: 30px;
+}
+
+.adventure-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.adventure-gallery figure {
+  flex: 1 1 calc(33% - 10px);
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.adventure-gallery figcaption {
+  margin-top: 5px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Footer */
 footer {
   background-color: var(--secondary-color);
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.socialmedia {
+  margin-top: 10px;
 }
 
 .socialmedia a {
   text-decoration: none;
   margin: 0 10px;
+}
+
+.socialmedia img {
+  height: 30px;
 }
