@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About us page for White Water Rafting adventures with company history and contact.">
+  <meta name="description" content="Contact us page for White Water Rafting with company information and a contact form.">
   <meta name="author" content="Jose Villanueva">
-  <title>About Us | White Water Rafting</title>
+  <title>Contact Us | White Water Rafting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
@@ -26,44 +26,53 @@
   </header>
 
   <main>
-    <div class="hero">
-      <img src="images/hero.jpg" alt="Rafting Adventure Background">
-      <h2>White Water Rafting Co.</h2>
-      <article>
-        <img src="images/happy-client.jpg" alt="Happy Client">
-        <p>Our mission is to deliver thrilling rafting experiences that connect you with nature, foster team spirit, and create lasting memories. Adventure starts here!</p>
-      </article>
-    </div>
-
-    <section class="history">
-      <h2>History</h2>
-      <p>Founded in 1999, our rafting company began as a small crew passionate about rivers and exploration. Over the years, we’ve guided thousands of adventurers through some of the most breathtaking rapids in the region.</p>
+    <section class="contact-info">
+      <h2>Contact Us</h2>
+      <p>Address: 123 River Adventure Rd, Rapids City, CO 81234</p>
+      <p>Phone: (555) 123-4567</p>
+      <p>Email: contact@whitewaterrafting.com</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.843821508881!2d144.96305781531598!3d-37.81627917975161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5778d89d3d7a77c!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1614232924195" width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
-    <section class="adventures">
-      <h2>Adventure Awaits You!</h2>
-      <div class="adventure-gallery">
+    <section class="team">
+      <h2>Meet Our Team</h2>
+      <div class="employee-gallery">
         <figure>
-          <img src="images/rafting1.jpg" alt="Los Dientes del Diablo">
-          <figcaption>Los Dientes del Diablo</figcaption>
+          <img src="images/employee1.jpg" alt="Emily - Guide">
+          <figcaption>Emily - Lead Guide</figcaption>
         </figure>
         <figure>
-          <img src="images/rafting2.jpg" alt="Big Mallard">
-          <figcaption>Big Mallard</figcaption>
+          <img src="images/employee2.jpg" alt="Jake - Safety Officer">
+          <figcaption>Jake - Safety Officer</figcaption>
         </figure>
         <figure>
-          <img src="images/rafting3.jpg" alt="Half Day Adventure">
-          <figcaption>Half Day Adventure</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting4.jpg" alt="Splash Canyon">
-          <figcaption>Splash Canyon</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting5.jpg" alt="Rapid Thunder">
-          <figcaption>Rapid Thunder</figcaption>
+          <img src="images/employee3.jpg" alt="Sophie - Customer Support">
+          <figcaption>Sophie - Customer Support</figcaption>
         </figure>
       </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <p>Purpose of your message:</p>
+        <label><input type="radio" name="purpose" value="inquiry" required> General Inquiry</label><br>
+        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+
+        <button type="submit">Send Message</button>
+      </form>
     </section>
   </main>
 
@@ -74,6 +83,7 @@
       <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter" height="30"></a>
       <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram" height="30"></a>
     </div>
+    <p><a href="images/contact-wireframe.png">View Contact Page Wireframe</a></p>
   </footer>
 </body>
 </html>
