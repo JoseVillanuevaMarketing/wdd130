@@ -28,21 +28,25 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADER */
+/* HEADER (GRID) */
 header {
-    background-color: var(--primary-color);
-    color: white;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 150px 1fr;
     align-items: center;
+    background-color: var(--primary-color);
     padding: 10px;
 }
 
-/* NAV */
+header img {
+    width: 100px;
+}
+
+/* NAV (FLEX) */
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 15px;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
 }
 
 nav a {
@@ -72,9 +76,8 @@ article {
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    display: block;
 }
 
 .hero h1 {
@@ -101,20 +104,53 @@ article {
     margin: 5px;
 }
 
+/* HISTORY GRID */
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.history-content img {
+    width: 100%;
+}
+
+/* ADVENTURES FLEX */
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+}
+
 /* FOOTER */
 footer {
-    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-top: 1px solid #ccc;
-    text-align: center;
     padding: 10px;
 }
 
 /* SOCIAL */
-.socialmedia a {
-    text-decoration: none;
+.socialmedia {
+    display: flex;
+    gap: 10px;
 }
 
 .socialmedia img {
     width: 30px;
-    margin: 5px;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
