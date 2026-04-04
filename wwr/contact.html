@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+      content="Contact White Water Rafting Company for reservations, questions, and adventure information.">
+    <meta name="author" content="Jose Villanueva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | White Water Rafting</title>
+
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Contact Us</h1>
+
+        <!-- COMPANY INFO -->
+        <section class="contact-info">
+            <h2>Company Information</h2>
+
+            <p><strong>Address:</strong> 123 River Road, Adventure City, USA</p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Email:</strong> info@raftingadventure.com</p>
+
+            <!-- GOOGLE MAP -->
+            <iframe src="https://www.google.com/maps?q=utah&output=embed">
+            </iframe>
+        </section>
+
+        <!-- EMPLOYEES -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/emp1.jpg" alt="Guide Leader">
+                    <figcaption>John Smith - Lead Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/emp2.jpg" alt="Safety Expert">
+                    <figcaption>Sarah Johnson - Safety Expert</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/emp3.jpg" alt="Tour Manager">
+                    <figcaption>Mike Brown - Tour Manager</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form>
+
+                <!-- NAME -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- EMAIL -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- PURPOSE -->
+                <p>Purpose of Message:</p>
+
+                <label>
+                    <input type="radio" name="purpose" value="general" required>
+                    General Inquiry
+                </label>
+
+                <label>
+                    <input type="radio" name="purpose" value="reservation">
+                    Reservation Question
+                </label>
+
+                <label>
+                    <input type="radio" name="purpose" value="suggestion">
+                    Website Suggestion
+                </label>
+
+                <!-- MESSAGE -->
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <!-- NEWSLETTER -->
+                <label>
+                    <input type="checkbox" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <!-- BUTTON -->
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 White Water Rafting Co. | Jose Villanueva</p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
